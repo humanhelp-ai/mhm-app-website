@@ -45,3 +45,7 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 .fuss p { color: var(--ink-muted); font-size: 0.95rem; margin: 0.5rem 0 0; }
 .recht h1 { font-size: 1.7rem; }
 .recht p, .recht li { max-width: 40rem; }
+.galerie { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.75rem; scroll-snap-type: x mandatory; }
+.galerie figure { flex: 0 0 13rem; margin: 0; scroll-snap-align: start; }
+.galerie img { width: 100%; height: 26rem; object-fit: cover; object-position: top; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); display: block; }
+.galerie figcaption { font-size: 0.95rem; color: var(--ink-muted); margin-top: 0.4rem; }
